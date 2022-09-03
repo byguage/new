@@ -1,0 +1,245 @@
+<!--DOCTYPE html-->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+  <title>DYE团队主页</title>
+  <link rel="shortcut icon" href="assets/icon/DYE.png" />
+  <link rel="stylesheet" href="assets/css/mdui.min.css">
+  <link rel="stylesheet" href="assets/css/atom-one-dark.min.css">
+  <link rel="stylesheet" href="assets/css/iconfont.min.css">
+  <link rel="stylesheet" href="assets/css/tocbot.min.css">
+  <link rel="stylesheet" href="assets/css/fancybox.min.css">
+  <link rel="stylesheet" href="assets/css/cuckoo.min.css">
+  <script src="assets/js/tocbot.min.js"></script>
+  <script src="assets/js/nprogress.min.js"></script>
+<link rel="stylesheet" href="music/css/player.css"><link href='Pio/pio.css' rel='stylesheet' type='text/css'/>
+<style>.index-filter{display: none}</style><style>.comment-textarea{background-image: url("assets/images/textarea.png");}.index-img{background-image: url("assets/images/loading.gif")}</style><style>.background{background-image: url('assets/images/13.png');}@media(max-width: 900px){.background{background-image: url('assets/images/textarea.png');}}</style></head>
+<body class="mdui-theme-primary-lime mdui-theme-accent-lime">
+  <div class="background"><div class="index-filter"></div></div>
+  <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed mdui-appbar-scroll-hide">
+    <div class="mdui-toolbar">
+      <a class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '.drawer', swipe: 'true', overlay: 'false'}">
+        <i class="mdui-icon material-icons">menu</i>
+      </a>
+      <a href="//ggmwx.vercel.app" class="mdui-typo-title">DYE团队</a>
+      <div class="mdui-toolbar-spacer"></div>
+      <button class="mdui-btn mdui-btn-icon qrcode" mdui-menu="{target: '#qrcode'}" mdui-tooltip="{content: '跨设备阅读'}"><i class="mdui-icon material-icons">devices</i></button>
+      <div class="mdui-menu" id="qrcode" style="width: 170px;height: 170px;transform-origin: 100% 0px; position: fixed; text-align:center;"><div style='margin-top: 63px;' class="mdui-spinner mdui-spinner-colorful"></div></div>
+      <button onclick="brightness()" id="brightness" class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">brightness_5</i></button>
+      <button onclick="tocBotton()" id="tocBotton" class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">bookmark</i></button>
+    </div>
+  </div>
+  <div class="mdui-drawer mdui-drawer-close mdui-drawer-full-height drawer">
+    <div class="drawer-img"><img class="mdui-img-circle" src="assets/icon/DYE.png" /></div>
+    <div class="drawer-contact">
+          </div>
+    <div class="mdui-divider"></div>
+    <ul class="mdui-list drawer-list" mdui-collapse="{accordion: true}">
+      <a href="//ggmwx.vercel.app">
+        <li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+          <div class="mdui-list-item-content">首页</div>
+        </li>
+      </a>
+      <li class="mdui-collapse-item">
+           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="mdui-icon material-icons mdui-list-item-icon">view_list</i>
+            <div class="mdui-list-item-content">内容</div>
+            <i class="mdui-icon material-icons mdui-list-item-icon mdui-collapse-item-arrow">keyboard_arrow_down</i>
+           </div>
+           <ul class="mdui-collapse-item-body mdui-list mdui-list-dense"><a href="//ggmwx-mc.vercel.app" class="mdui-list-item mdui-ripple" mdui-drawer-close><div class="mdui-list-item-content">DYE客户端</div></a><a href="//jq.qq.com/?_wv=1027&k=Y4JY2Mo9" class="mdui-list-item mdui-ripple" mdui-drawer-close><div class="mdui-list-item-content">进入Q群</div></a></ul>
+          </li><li class="mdui-collapse-item">
+<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+          <i class="mdui-icon material-icons mdui-list-item-icon">view_carousel</i>
+          <div class="mdui-list-item-content">更多</div>
+          <i class="mdui-icon material-icons mdui-list-item-icon mdui-collapse-item-arrow">keyboard_arrow_down</i>
+         </div>
+         <ul class="mdui-collapse-item-body mdui-list mdui-list-dense"><a class="mdui-list-item mdui-ripple" href="//ggmwx-mc.vercel.app/other/sponsor.html" mdui-drawer-close>赞助我们</a><a class="mdui-list-item mdui-ripple" href="//jq.qq.com/?_wv=1027&k=vBAwDe2b" mdui-drawer-close>加入我们</a></ul></li><div class="mdui-divider"></div><a href="//jq.qq.com/?_wv=1027&k=1W9qlwMJ" target="_blank" class="mdui-list-item mdui-ripple" mdui-drawer-close>
+         <i class="mdui-icon material-icons mdui-list-item-icon">rss_feed</i>
+         <div class="mdui-list-item-content">进入Q群</div>
+        </a>    </ul>
+      </div><div class="index-container">
+  <div class="mdui-col-md-8">
+    <div class="article">
+      <a class="post" href="//ggmwx-mc.vercel.app">
+        <div class="mdui-card index-card mdui-hoverable">
+          <div class="mdui-card-media index-img-media">
+            <div class="index-img" data-bg="assets/icon/mc.png"></div>
+            <div class="index-card-filter"></div>
+            <div class="mdui-card-media-covered">
+              <div class="mdui-card-primary index-primary">
+                <div class="mdui-card-primary-title">DYE客户端</div>
+                <div class="mdui-card-primary-subtitle index-info">Minecraft基岩版辅助</div>
+                <div class="mdui-card-primary-subtitle index-subtitle">这是一款即装即用，自带辅助的Minecraft基岩版客户端</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+          <a class="post" href="//jq.qq.com/?_wv=1027&k=1W9qlwMJ">
+        <div class="mdui-card index-card mdui-hoverable">
+          <div class="mdui-card-media index-img-media">
+            <div class="index-img" data-bg="assets/icon/QQ.png"></div>
+            <div class="index-card-filter"></div>
+            <div class="mdui-card-media-covered">
+              <div class="mdui-card-primary index-primary">
+                <div class="mdui-card-primary-title">进入Q群</div>
+                <div class="mdui-card-primary-subtitle index-info">进入售卖群</div>
+                <div class="mdui-card-primary-subtitle index-subtitle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+          <div class="changePage changePage-load">到底了啦</div>
+          <div class="checkLast"></div>
+  </div>
+  <div class="mdui-col-md-4">
+  <div class="mdui-card mdui-hoverable sidebar-info">
+    <div class="sidebar-info-img">
+      <div class="sidebar-info-bg"
+           style="background-image: url('assets/images/sidebar.jpg')"></div>
+      <div class="mdui-img-circle mdui-shadow-3"
+           style="background-image: url('assets/icon/DYE.png')"></div>
+    </div>
+    <div class="sidebar-info-body">
+      <div class="sidebar-info-name">DYE团队</div>
+      <div class="sidebar-info-desc">Q群:365983501</div>
+    </div>
+  </div>
+  <div class="mdui-card mdui-hoverable sidebar-module">
+    <ul class="mdui-list">
+      <div class="sidebar-module-title">链接</div>
+      <li class="mdui-divider mdui-m-y-0"></li>
+                    <a href="//jq.qq.com/?_wv=1027&k=1W9qlwMJ">
+          <li class="mdui-list-item mdui-ripple sidebar-module-list">
+            <div class="sidebar-reply-text">Q群:365983501</div>
+          </li>
+          <li class="mdui-divider"></li>
+        </a>
+              <a href="https://ggmwx-mc.vercel.app/">
+          <li class="mdui-list-item mdui-ripple sidebar-module-list">
+            <div class="sidebar-reply-text">获取我的世界客户端</div>
+          </li>
+          <li class="mdui-divider"></li>
+        </a>
+          </ul>
+  </div>
+    <div class="mdui-card mdui-hoverable sidebar-module">
+    <ul class="mdui-list">
+      <div class="sidebar-module-title">友情链接</div>
+      <li class="mdui-divider mdui-m-y-0"></li>
+      <div class='mdui-row-xs-2'>
+      <div class='mdui-col'>
+        <a target='_blank' href='//ggmwx-mc.vercel.app/other/sponsor.html'>
+         <li class='mdui-list-item mdui-ripple sidebar-module-list'>
+            <div class='sidebar-reply-text'>赞助我们</div>
+          </li>
+        </a>
+      </div>
+      <div class='mdui-col'>
+        <a target='_blank' href='//jq.qq.com/?_wv=1027&k=vBAwDe2b'>
+         <li class='mdui-list-item mdui-ripple sidebar-module-list'>
+            <div class='sidebar-reply-text'>加入我们</div>
+          </li>
+        </a>
+      </div>
+      <div class='mdui-col'>
+        <a target='_blank' href='//jq.qq.com/?_wv=1027&k=1W9qlwMJ'>
+         <li class='mdui-list-item mdui-ripple sidebar-module-list'>
+            <div class='sidebar-reply-text'>进入Q群</div>
+          </li>
+        </a>
+      </div>
+      <div class='mdui-col'>
+        <a target='_blank' href='//ggmwx-mc.vercel.app'>
+         <li class='mdui-list-item mdui-ripple sidebar-module-list'>
+            <div class='sidebar-reply-text'>客户端下载</div>
+          </li>
+        </a>
+      </div>      </div>
+    </ul>
+  </div>
+    </div>
+<span class="mdui-text-color-theme"></span>
+</div>
+<div onclick="tocOverlay()" class="toc-overlay"></div>
+<button class="mdui-fab mdui-fab-fixed mdui-ripple top mdui-color-theme-accent"><i class="mdui-icon material-icons">arrow_upward</i></button>
+<footer>
+<br>
+<script>
+    window.onload = function() {
+        setInterval(function() {
+            var nowTime = new Date();//获取当前时间
+            //创建日期对象
+            var endTime = new Date("2022-8-14 00:00:00");
+            var seconds = parseInt((endTime.getTime() - nowTime.getTime()) / 1000);//两个时间点的时间差(秒)
+            var d = parseInt(seconds / 3600 / 24);//得到天数
+            var h = parseInt(seconds / 3600 % 24);//小时
+            var m = parseInt(seconds / 60 % 60);//分钟
+            var s = parseInt(seconds % 60);//秒
+            document.getElementById("djs").innerHTML = "此站已经运行" + d +"天" + h + "小时" + m + "分钟" + s + "秒";
+        }, 1000);
+    }
+</script>
+<div id="djs"></div><p>&copy; 2022 <a href="//ggmwx.vercel.app/">DYE团队</a>｜<a href="//jq.qq.com/?_wv=1027&k=Y4JY2Mo9">Q群:365983501</a><br>Copyright © 2020-2022 ggmwx.vercel.app All Rights Reserved</footer>
+<script src="assets/js/mdui.min.js"></script>
+<script src="assets/js/highlight.min.js"></script>
+<script src="assets/js/lazyload.min.js"></script>
+<script src="assets/js/fancybox.umd.min.js"></script>
+<script src="assets/js/qrcode.min.js"></script>
+<script src="assets/js/infinite-scroll.pkgd.min.js"></script>
+<script src="assets/js/pjax.min.js"></script>
+<script src="assets/js/cuckoo.min.js"></script>
+<script src="assets/js/comments.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?89ca9686de271b1aba10722f005e8556';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hm, s);})();</script>
+			<div id="QPlayer" style="z-index:2016">
+			<div id="pContent">
+				<div id="player">
+					<span class="cover"></span>
+					<div class="ctrl">
+						<div class="musicTag marquee">
+							<strong>Title</strong>
+							 <span> - </span>
+							<span class="artist">Artist</span>
+						</div>
+						<div class="progress">
+							<div class="timer left">0:00</div>
+							<div class="contr">
+								<div class="rewind icon"></div>
+								<div class="playback icon"></div>
+								<div class="fastforward icon"></div>
+							</div>
+							<div class="right">
+								<div class="liebiao icon"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ssBtn">
+				        <div class="adf"></div>
+			    </div>
+			</div>
+			<ol id="playlist"></ol>
+			</div>
+             <script src="music/js/jquery.min.js"></script>
+            <script>
+              var autoplay = 1;
+              var playlist = [
+              {title:"Feeling The Rain",artist:"MoreanP",mp3:"//music.163.com/song/media/outer/url?id=496774187.mp3",cover:"//p2.music.126.net/p9Frozdg_luAkO6ENOtTXg==/109951162997219545.jpg?param=106x106",},
+              {title:"心做し（Cover GUMI）",artist:"双笙",mp3:"//music.163.com/song/media/outer/url?id=478303470.mp3",cover:"//p1.music.126.net/uwF73BxhvWiR-Kxn0wGe0g==/109951162927951204.jpg?param=106x106",},
+              {title:"绿色",artist:"陈雪凝",mp3:"//music.163.com/song/media/outer/url?id=1345848098.mp3",cover:"//p2.music.126.net/R4ZP3AJ9xV0vvw8LX7AbMA==/109951163860425334.jpg?param=106x106",},
+              {title:"你的酒馆对我打了烊",artist:"陈雪凝",mp3:"//music.163.com/song/media/outer/url?id=1341964346.mp3",cover:"//p1.music.126.net/LiRR__0pJHSivqBHZzbMUw==/109951163816225567.jpg?param=106x106",},
+              ];
+              var isRotate = 1;
+            </script> 
+<script  src="music/js/jquery-ui.min.js"></script>
+<script  src="music/js/jquery.marquee.min.js"></script>
+<script  src="music/js/player.js"></script>
+<div class="pio-container left"><div class="pio-action"></div><canvas id="pio" width="230" height="275"></canvas></div><script src="Pio/l2d.js"></script>
+<script src="Pio/pio.js"></script>
+<script>var pio = new Paul_Pio({"mode":"fixed","hidden":false,"content":[],"tips":true,"model":["Pio/model.json"]});</script><script>$(document).on('pjax:complete',function(){if(typeof _hmt !== 'undefined'){ _hmt.push(['_trackPageview', location.pathname + location.search])};});</script></body>
+</html>
